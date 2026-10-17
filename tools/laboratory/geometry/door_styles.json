@@ -1,0 +1,58 @@
+{
+  "schema": "heyzed:door-styles/1",
+  "status": "candidate",
+  "styles": [
+    {
+      "id": "solid",
+      "label": "Solid",
+      "kind": "solid"
+    },
+    {
+      "id": "small-glazed",
+      "label": "Small glass",
+      "kind": "glass",
+      "bottom": 0.7,
+      "top": 0.9,
+      "columns": 1,
+      "rows": 1
+    },
+    {
+      "id": "upper-glazed",
+      "label": "Upper glass",
+      "kind": "glass",
+      "bottom": 0.48,
+      "top": 0.94,
+      "columns": 2,
+      "rows": 2
+    },
+    {
+      "id": "full-glazed",
+      "label": "Full glass",
+      "kind": "glass",
+      "bottom": 0.06,
+      "top": 0.94,
+      "columns": 1,
+      "rows": 1
+    },
+    {
+      "id": "divided-glazed",
+      "label": "Divided glass",
+      "kind": "glass",
+      "bottom": 0.06,
+      "top": 0.94,
+      "columns": 1,
+      "rows": 2
+    },
+    {
+      "id": "barred",
+      "label": "Bars",
+      "kind": "bars",
+      "columns": 5,
+      "rows": 3
+    }
+  ],
+  "partialHeightLeaf": {
+    "bottom": 0.109375,
+    "top": 0.7083333333333334
+  }
+}

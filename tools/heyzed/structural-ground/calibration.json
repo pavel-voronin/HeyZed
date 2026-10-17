@@ -1,0 +1,26 @@
+{
+  "schema": 1,
+  "status": "authored calibration, not recovered or approved native map geometry",
+  "units": "meters",
+  "domain": [-12, -10, 12, 10],
+  "surfaces": {
+    "lawn": {"role": "landscaped ground", "material": "Grass", "height": 0.15},
+    "pavement": {"role": "paved ground", "material": "Road_01", "height": 0}
+  },
+  "boundary": {
+    "id": "pavement-lawn-border",
+    "left": "lawn",
+    "right": "pavement",
+    "start": [-12, -2.37],
+    "arc": {"center": [-1.73, 1.43], "radius": 3.8, "startDegrees": -90, "endDegrees": 0},
+    "end": [2.07, 10],
+    "width": 0.18,
+    "profile": [[-0.09, -0.15], [0.09, -0.15], [0.09, 0.15], [-0.065, 0.15], [-0.09, 0.125]],
+    "material": "Curb"
+  },
+  "detail": [
+    {"id": "near", "arcStepDegrees": 5, "bevel": true},
+    {"id": "middle", "arcStepDegrees": 15, "bevel": false},
+    {"id": "far", "arcStepDegrees": 30, "bevel": false}
+  ]
+}

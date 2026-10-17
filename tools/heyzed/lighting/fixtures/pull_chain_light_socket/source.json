@@ -1,0 +1,31 @@
+{
+  "source": "https://polyhaven.com/a/pull_chain_light_socket",
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "file": "pull_chain_light_socket.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/pull_chain_light_socket/pull_chain_light_socket_1k.gltf",
+      "sha256": "093c38e382efeaf605be0133bec7a93a8b2c935c40a5d0f311468053681d8258"
+    },
+    {
+      "file": "textures/pull_chain_light_socket_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pull_chain_light_socket/pull_chain_light_socket_diff_1k.jpg",
+      "sha256": "92675203e71250358db8e200a8a367ff39839f231db93050135718769b155552"
+    },
+    {
+      "file": "textures/pull_chain_light_socket_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pull_chain_light_socket/pull_chain_light_socket_arm_1k.jpg",
+      "sha256": "35a97a7025587b8d11cbe32e385b8383fe8e7cb05e1e84c74f58cf31c5f1c295"
+    },
+    {
+      "file": "pull_chain_light_socket.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/pull_chain_light_socket/pull_chain_light_socket.bin",
+      "sha256": "a258aff9c893175c7ddcd09a904900ff10047a1a3ad51688b867c95208b45b4e"
+    },
+    {
+      "file": "textures/pull_chain_light_socket_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/pull_chain_light_socket/pull_chain_light_socket_nor_gl_1k.jpg",
+      "sha256": "8af515ce9ad355961bfc086830c54e065a579a737f233cea627735f850256860"
+    }
+  ]
+}

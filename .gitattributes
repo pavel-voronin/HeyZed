@@ -1,0 +1,3 @@
+*.rgba binary
+*.mesh binary
+release-symbols/** -text whitespace=cr-at-eol

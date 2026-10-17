@@ -1,0 +1,31 @@
+{
+  "source": "https://polyhaven.com/a/vintage_flashlight",
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "file": "vintage_flashlight.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/vintage_flashlight/vintage_flashlight_1k.gltf",
+      "sha256": "47549746566f8ee37b35cd5c4be947239d65e7e9c4dea7ba5e29810df96b406e"
+    },
+    {
+      "file": "textures/vintage_flashlight_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/vintage_flashlight/vintage_flashlight_nor_gl_1k.jpg",
+      "sha256": "a4474869f8e0d721f908ba0324b415eafcaa576cf061d9b84e86e6be9b5b28fd"
+    },
+    {
+      "file": "textures/vintage_flashlight_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/vintage_flashlight/vintage_flashlight_diff_1k.jpg",
+      "sha256": "2b428ccd2c41ef56d5204f319b2c7e914af29531446caf1aa396acc312ac8692"
+    },
+    {
+      "file": "textures/vintage_flashlight_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/vintage_flashlight/vintage_flashlight_arm_1k.jpg",
+      "sha256": "5183d389859b02f5bb6d89b3869792020e3177e04a11866923e535c72373a03d"
+    },
+    {
+      "file": "vintage_flashlight.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/4k/vintage_flashlight/vintage_flashlight.bin",
+      "sha256": "76996acb00365d5c0ff237711459c8871c56eea483568bfad73f24c08271a880"
+    }
+  ]
+}

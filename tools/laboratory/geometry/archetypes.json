@@ -1,0 +1,210 @@
+{
+  "schema": 1,
+  "status": "laboratory",
+  "archetypes": {
+    "boundary": {
+      "label": "Wall",
+      "defaultType": "boundary.wall",
+      "states": [
+        "present"
+      ],
+      "slots": [],
+      "contract": "receive-subtractions",
+      "implementation": {
+        "generator": "wall",
+        "material": "neutral",
+        "cutCover": {
+          "material": "neutral",
+          "projection": "orthogonal",
+          "space": "boundary",
+          "origin": [
+            0,
+            0,
+            0
+          ],
+          "size": [
+            1,
+            1,
+            1
+          ],
+          "wrap": "repeat"
+        },
+        "rank": 1,
+        "joinOperations": [
+          "middle",
+          "diagonal",
+          "abut"
+        ]
+      }
+    },
+    "door": {
+      "label": "Door",
+      "defaultType": "door.standard",
+      "states": [
+        "closed",
+        "open"
+      ],
+      "slots": [
+        "barricade"
+      ],
+      "contract": "subtract-and-install",
+      "implementation": {
+        "generator": "door",
+        "style": "solid",
+        "dimensions": "door.standard",
+        "material": "wood"
+      },
+      "subtraction": {
+        "dimensions": "door.standard",
+        "depth": "wall"
+      }
+    },
+    "window": {
+      "label": "Window",
+      "defaultType": "window.standard",
+      "states": [
+        "closed",
+        "open",
+        "broken",
+        "glassRemoved"
+      ],
+      "slots": [
+        "shutters",
+        "curtain",
+        "roller",
+        "sheet",
+        "barricade",
+        "rope"
+      ],
+      "contract": "subtract-and-install",
+      "implementation": {
+        "generator": "window",
+        "recipe": "two-sash",
+        "dimensions": "window.standard",
+        "material": "frame"
+      },
+      "subtraction": {
+        "dimensions": "window.standard",
+        "depth": "wall"
+      }
+    }
+  },
+  "types": [
+    {
+      "id": "boundary.wall",
+      "archetype": "boundary",
+      "label": "Solid wall"
+    },
+    {
+      "id": "boundary.fence",
+      "extends": "boundary.wall",
+      "label": "Low fence",
+      "generator": "fence",
+      "material": "wood",
+      "archetype": "boundary",
+      "cutCover": {
+        "material": "wood",
+        "projection": "orthogonal",
+        "space": "boundary",
+        "origin": [
+          0,
+          0,
+          0
+        ],
+        "size": [
+          1,
+          1,
+          1
+        ],
+        "wrap": "repeat"
+      },
+      "rank": 2
+    },
+    {
+      "id": "boundary.arch",
+      "extends": "boundary.wall",
+      "label": "Arch",
+      "generator": "arch",
+      "archetype": "boundary"
+    },
+    {
+      "id": "door.standard",
+      "archetype": "door",
+      "label": "Wooden door"
+    },
+    {
+      "id": "door.gate",
+      "extends": "door.standard",
+      "label": "Gate",
+      "generator": "native-gate",
+      "dimensions": "gate.standard",
+      "slots": [],
+      "archetype": "door",
+      "gateDesign": "wood-low"
+    },
+    {
+      "id": "door.glazed",
+      "extends": "door.standard",
+      "label": "Glazed door",
+      "style": "upper-glazed",
+      "slots": [
+        "sheet",
+        "barricade"
+      ],
+      "archetype": "door"
+    },
+    {
+      "id": "window.standard",
+      "archetype": "window",
+      "label": "Standard window"
+    },
+    {
+      "id": "window.storefront",
+      "extends": "window.standard",
+      "label": "Storefront",
+      "recipe": "fixed-section",
+      "dimensions": "window.full-cell",
+      "stateAliases": {
+        "open": "closed"
+      },
+      "slots": [],
+      "archetype": "window"
+    }
+  ],
+  "attachments": [],
+  "palette": {
+    "neutral": {
+      "label": "Neutral",
+      "color": "#b8c1c6"
+    },
+    "wood": {
+      "label": "Wood baseline",
+      "color": "#b58d63"
+    },
+    "frame": {
+      "label": "Frame baseline",
+      "color": "#e9e5da"
+    },
+    "cloth": {
+      "label": "Cloth baseline",
+      "color": "#d6cbb5"
+    },
+    "metal": {
+      "label": "Metal baseline",
+      "color": "#777b7d"
+    },
+    "hardware": {
+      "label": "Hardware baseline",
+      "color": "#c6c9cc"
+    },
+    "charred": {
+      "label": "Charred baseline",
+      "color": "#151719"
+    },
+    "cubicle": {
+      "label": "Cubicle baseline",
+      "color": "#77778e"
+    }
+  },
+  "attachmentSource": "attachments/families.json"
+}

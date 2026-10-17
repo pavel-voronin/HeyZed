@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "id": "unreal-lighting-interior",
+  "manual": true,
+  "spawn": {"x":8107,"y":11574,"z":0},
+  "sandbox": {"Zombies":3,"DayLength":1,"EnableVehicles":true,"CarSpawnRate":3},
+  "steps": [{"command":"native.time","hour":23,"freeze":false}]
+}

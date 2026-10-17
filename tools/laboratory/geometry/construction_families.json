@@ -1,0 +1,198 @@
+{
+  "schema": "heyzed:construction-families/1",
+  "families": [
+    {
+      "id": "door-sliding-glass",
+      "kind": "sliding-door",
+      "label": "Sliding glass pair",
+      "status": "approved",
+      "wallTiles": ["fixtures_doors_01_112", "fixtures_doors_01_113", "fixtures_doors_01_114", "fixtures_doors_01_115"],
+      "insertTiles": ["fixtures_doors_01_116", "fixtures_doors_01_117", "fixtures_doors_01_118", "fixtures_doors_01_119"],
+      "cells": 2,
+      "assemblies": [
+        {"side": "W", "fixed": "fixtures_doors_01_112", "empty": "fixtures_doors_01_114", "closed": "fixtures_doors_01_116", "open": "fixtures_doors_01_118"},
+        {"side": "N", "fixed": "fixtures_doors_01_113", "empty": "fixtures_doors_01_115", "closed": "fixtures_doors_01_117", "open": "fixtures_doors_01_119"}
+      ]
+    },
+    {
+      "id": "remaining-commercial",
+      "kind": "double-door",
+      "label": "Commercial edge opening",
+      "status": "approved",
+      "wallTiles": [
+        "walls_commercial_02_84",
+        "walls_commercial_02_85"
+      ],
+      "insertTiles": [
+        "fixtures_doors_02_40"
+      ],
+      "profileId": null,
+      "parameters": {
+        "left": 0.20600000000000002,
+        "right": 1.794,
+        "bottom": 0.0,
+        "top": 0.8001632986323738
+      },
+      "cells": 2
+    },
+    {
+      "id": "remaining-cubicles",
+      "kind": "cubicle",
+      "label": "Cubicle doors",
+      "status": "approved",
+      "wallTiles": [
+        "fixtures_bathroom_01_46",
+        "fixtures_bathroom_01_62",
+        "fixtures_bathroom_01_42",
+        "fixtures_bathroom_01_58"
+      ],
+      "insertTiles": [
+        "fixtures_bathroom_01_48",
+        "fixtures_bathroom_01_49",
+        "fixtures_bathroom_01_64",
+        "fixtures_bathroom_01_65",
+        "fixtures_doors_01_53"
+      ],
+      "profileId": "opening.door.01",
+      "cells": 1
+    },
+    {
+      "id": "remaining-damaged",
+      "kind": "damaged",
+      "label": "Damaged doors",
+      "status": "approved",
+      "wallTiles": [
+        "walls_burnt_01_10",
+        "walls_burnt_01_14",
+        "walls_exterior_wooden_01_54",
+        "walls_exterior_wooden_01_78",
+        "walls_burnt_01_11",
+        "walls_burnt_01_15"
+      ],
+      "insertTiles": [
+        "carpentry_01_48",
+        "carpentry_01_52",
+        "fixtures_doors_01_52",
+        "fixtures_doors_01_56"
+      ],
+      "profileId": "opening.door.01",
+      "cells": 1
+    },
+    {
+      "id": "remaining-garage-1-left",
+      "kind": "garage",
+      "label": "Garage",
+      "status": "approved",
+      "wallTiles": [
+        "industry_trucks_01_40",
+        "industry_trucks_01_43",
+        "walls_garage_01_8",
+        "walls_garage_01_11",
+        "walls_garage_01_24",
+        "walls_garage_01_27",
+        "walls_garage_01_56",
+        "walls_garage_01_59",
+        "walls_garage_02_8",
+        "walls_garage_02_11",
+        "walls_garage_02_40",
+        "walls_garage_02_43",
+        "walls_garage_02_56",
+        "walls_garage_02_59"
+      ],
+      "insertTiles": [
+        "industry_trucks_01_32",
+        "industry_trucks_01_35",
+        "walls_garage_01_0",
+        "walls_garage_01_16",
+        "walls_garage_01_19",
+        "walls_garage_01_3",
+        "walls_garage_01_48",
+        "walls_garage_01_51",
+        "walls_garage_02_0",
+        "walls_garage_02_3",
+        "walls_garage_02_32",
+        "walls_garage_02_35",
+        "walls_garage_02_48",
+        "walls_garage_02_51"
+      ]
+    },
+    {
+      "id": "remaining-logs",
+      "kind": "log",
+      "label": "Log doors",
+      "status": "approved",
+      "wallTiles": [
+        "walls_logs_10",
+        "walls_logs_11",
+        "walls_logs_50",
+        "walls_logs_51"
+      ],
+      "insertTiles": [
+        "carpentry_01_56",
+        "fixtures_doors_01_16",
+        "fixtures_doors_01_17",
+        "fixtures_doors_01_20",
+        "fixtures_doors_01_28",
+        "fixtures_doors_01_29",
+        "fixtures_doors_01_37",
+        "fixtures_doors_01_4",
+        "fixtures_doors_01_5",
+        "fixtures_doors_01_53",
+        "fixtures_doors_01_57",
+        "fixtures_doors_01_8",
+        "fixtures_doors_01_9",
+        "fixtures_doors_02_16",
+        "fixtures_doors_02_4",
+        "fixtures_doors_02_5",
+        "walls_logs_41"
+      ],
+      "profileId": "opening.door.01",
+      "cells": 1
+    },
+    {
+      "id": "remaining-storefront",
+      "kind": "open-passage",
+      "label": "Open storefront sections",
+      "status": "approved",
+      "wallTiles": [
+        "location_shop_mall_01_16",
+        "location_shop_mall_01_17"
+      ],
+      "insertTiles": [],
+      "profileId": null,
+      "parameters": {
+        "left": 0.0,
+        "right": 1.0,
+        "bottom": 0.0,
+        "top": 0.7578125
+      },
+      "cells": 1
+    },
+    {
+      "id": "remaining-railroad",
+      "verticalPlacement": "below-ceiling-slab",
+      "kind": "tall-passage",
+      "label": "Tall edge openings",
+      "status": "approved",
+      "wallTiles": [
+        "industry_railroad_05_12",
+        "industry_railroad_05_13",
+        "industry_railroad_05_14",
+        "industry_railroad_05_15",
+        "industry_railroad_05_28",
+        "industry_railroad_05_29",
+        "industry_railroad_05_30",
+        "industry_railroad_05_31"
+      ],
+      "insertTiles": [],
+      "profileId": null,
+      "parameters": {
+        "left": 0.1875,
+        "right": 1.8125,
+        "bottom": 0.0,
+        "top": 0.9635416666666667
+      },
+      "cells": 2
+    }
+  ]
+}

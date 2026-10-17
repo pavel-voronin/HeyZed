@@ -1,0 +1,44 @@
+struct SurfaceFunctions
+{
+    float hash(float2 p) { return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453); }
+    float noise(float2 p)
+    {
+        float2 i=floor(p),f=frac(p); f=f*f*(3-2*f);
+        return lerp(lerp(hash(i),hash(i+float2(1,0)),f.x),lerp(hash(i+float2(0,1)),hash(i+1),f.x),f.y);
+    }
+    float4 sampleMap(Texture2D tex,SamplerState smp,float2 p,float width,float blend)
+    {
+        float2 uv=p/max(width,1);
+        return lerp(Texture2DSample(tex,smp,uv),Texture2DSample(tex,smp,uv*1.37+float2(7.31,3.17)),blend);
+    }
+    float3 unpack(float4 v)
+    {
+        float2 n=v.xy*2-1; return normalize(float3(n,sqrt(saturate(1-dot(n,n)))));
+    }
+};
+SurfaceFunctions F;
+float2 p=World.xy+Origin.xy;
+float variation=F.noise(p*.0009);
+float macro=lerp(.82,1.12,F.noise(p*.00025));
+float mask=0;
+float3 grainColor=F.sampleMap(BaseDiffuse,BaseDiffuseSampler,p,BaseWidth,variation).rgb;
+float luminance=dot(grainColor,float3(.2126,.7152,.0722));
+float3 a=lerp(grainColor,luminance.xxx,saturate(NeutralAggregate))*BaseTint.rgb;
+float3 na=F.unpack(F.sampleMap(BaseNormal,BaseNormalSampler,p,BaseWidth,variation));
+float ra=F.sampleMap(BaseRoughness,BaseRoughnessSampler,p,BaseWidth,variation).r;
+float3 b=a,nb=na; float rb=ra;
+[branch] if (mask>0)
+{
+    b=F.sampleMap(OverlayDiffuse,OverlayDiffuseSampler,p,OverlayWidth,variation).rgb*OverlayTint.rgb;
+    nb=F.unpack(F.sampleMap(OverlayNormal,OverlayNormalSampler,p,OverlayWidth,variation));
+    rb=F.sampleMap(OverlayRoughness,OverlayRoughnessSampler,p,OverlayWidth,variation).r;
+}
+Normal=normalize(lerp(na,nb,mask));
+Normal=normalize(float3(Normal.xy*lerp(lerp(.7,1.25,saturate(GroundSoftBlend)),.2,saturate(PaintCoat)),Normal.z));
+float footprint=max(length(ddx(p/max(BaseWidth,1))),length(ddy(p/max(BaseWidth,1))));
+Normal=normalize(float3(Normal.xy*(1-smoothstep(.015,.12,footprint)),Normal.z));
+float asphalt=lerp(BaseRoad,OverlayRoad,mask);
+Roughness=lerp(max(lerp(ra,rb,mask),lerp(.85,.94,asphalt)),lerp(.94,.72,PaintWear),saturate(PaintCoat));
+float3 color=lerp(a,b,mask)*macro;
+float grain=saturate(dot(grainColor,float3(.2126,.7152,.0722)));
+return lerp(color,lerp(grainColor*.55,BaseTint.rgb*lerp(.9,1.05,grain),PaintWear),saturate(PaintCoat));

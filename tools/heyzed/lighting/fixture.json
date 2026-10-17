@@ -1,0 +1,10 @@
+{
+  "source": "street_lamp_01.gltf",
+  "sourceUnits": "meters",
+  "placement": "native square center; ground-level base for paired upper fixtures",
+  "translationCm": [0, 0, 0],
+  "rotationDegrees": [0, 0, 0],
+  "scale": [1, 1, 1],
+  "emitterCm": [0, 0, 326.43],
+  "sourceRadiusCm": 5
+}

@@ -1,0 +1,19 @@
+{
+  "schema": 1,
+  "status": "laboratory",
+  "types": {},
+  "materials": {},
+  "families": [
+    {
+      "tileset": "walls_commercial_01",
+      "archetype": "window",
+      "type": "window.storefront"
+    },
+    {
+      "tileset": "walls_commercial_02",
+      "archetype": "window",
+      "type": "window.storefront"
+    }
+  ],
+  "openings": {}
+}

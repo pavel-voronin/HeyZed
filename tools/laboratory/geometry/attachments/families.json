@@ -1,0 +1,737 @@
+{
+  "families": [
+    {
+      "id": "curtain-0",
+      "label": "Long beige",
+      "category": "covering",
+      "kind": "drape-long",
+      "color": "#bca17c",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_0"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_4"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_0",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-8",
+      "label": "Long white",
+      "category": "covering",
+      "kind": "drape-long",
+      "color": "#d7d3c7",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_8"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_12"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_8",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-88",
+      "label": "Long gray",
+      "category": "covering",
+      "kind": "drape-long",
+      "color": "#878989",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_88"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_92"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_88",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-24",
+      "label": "Short blue",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#819ab6",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_24"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_28"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_24",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-32",
+      "label": "Short pink",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#b890a0",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_32"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_36"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_32",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-40",
+      "label": "Short brown",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#856959",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_40"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_44"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_40",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-48",
+      "label": "Short white",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#d6d1c6",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_48"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_52"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_48",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-56",
+      "label": "Short beige",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#b7aa8a",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_56"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_60"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_56",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-64",
+      "label": "Short green",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#849c85",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_64"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_68"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_64",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-72",
+      "label": "Short black",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#41464a",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_72"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_76"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_72",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "curtain-80",
+      "label": "Short gray",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#9e9b93",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_80"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_84"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_80",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "sheet",
+      "label": "Sheet",
+      "category": "covering",
+      "kind": "sheet",
+      "color": "#d4d0b6",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_01_16"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_01_20"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_01_16",
+      "generator": "accepted-attachment",
+      "slot": "sheet",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "shade-0",
+      "label": "Roller white",
+      "category": "covering",
+      "kind": "roller",
+      "color": "#c4c2b4",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_02_0"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_02_4"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_02_0",
+      "generator": "accepted-attachment",
+      "slot": "roller",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "shade-8",
+      "label": "Roller green",
+      "category": "covering",
+      "kind": "roller",
+      "color": "#9bad8c",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_02_8"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_02_12"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_02_8",
+      "generator": "accepted-attachment",
+      "slot": "roller",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "shade-16",
+      "label": "Roller bordeaux",
+      "category": "covering",
+      "kind": "roller",
+      "color": "#97656b",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_02_16"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_02_20"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_02_16",
+      "generator": "accepted-attachment",
+      "slot": "roller",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "shade-24",
+      "label": "Roller pearl",
+      "category": "covering",
+      "kind": "roller",
+      "color": "#dad3b7",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_curtains_02_24"
+          }
+        ],
+        "open": [
+          {
+            "name": "fixtures_windows_curtains_02_28"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "fixtures_windows_curtains_02_24",
+      "generator": "accepted-attachment",
+      "slot": "roller",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "tent-56",
+      "label": "Military green",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#75836a",
+      "references": {
+        "closed": [
+          {
+            "name": "location_military_tent_01_56"
+          }
+        ],
+        "open": [
+          {
+            "name": "location_military_tent_01_60"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "location_military_tent_01_56",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "tent-120",
+      "label": "Military tan",
+      "category": "covering",
+      "kind": "drape-short",
+      "color": "#a69571",
+      "references": {
+        "closed": [
+          {
+            "name": "location_military_tent_01_120"
+          }
+        ],
+        "open": [
+          {
+            "name": "location_military_tent_01_124"
+          }
+        ]
+      },
+      "mechanism": "curtain",
+      "nativeBase": "location_military_tent_01_120",
+      "generator": "accepted-attachment",
+      "slot": "curtain",
+      "states": [
+        "closed",
+        "open"
+      ]
+    },
+    {
+      "id": "shutter-16",
+      "label": "White panel",
+      "category": "decor",
+      "kind": "shutter-panel",
+      "color": "#d6d4c7",
+      "mechanism": "wall-overlay",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_detailing_01_16"
+          },
+          {
+            "name": "fixtures_windows_detailing_01_17"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "shutters",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "shutter-20",
+      "label": "Blue panel",
+      "category": "decor",
+      "kind": "shutter-panel",
+      "color": "#8ba3b6",
+      "mechanism": "wall-overlay",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_detailing_01_20"
+          },
+          {
+            "name": "fixtures_windows_detailing_01_21"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "shutters",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "shutter-24",
+      "label": "Wood louvers",
+      "category": "decor",
+      "kind": "shutter-louver",
+      "color": "#88694f",
+      "mechanism": "wall-overlay",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_detailing_01_24"
+          },
+          {
+            "name": "fixtures_windows_detailing_01_25"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "shutters",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "shutter-28",
+      "label": "Dark louvers",
+      "category": "decor",
+      "kind": "shutter-louver",
+      "color": "#4f6169",
+      "mechanism": "wall-overlay",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_detailing_01_28"
+          },
+          {
+            "name": "fixtures_windows_detailing_01_29"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "shutters",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "shutter-32",
+      "label": "Red panel",
+      "category": "decor",
+      "kind": "shutter-panel",
+      "color": "#845949",
+      "mechanism": "wall-overlay",
+      "references": {
+        "closed": [
+          {
+            "name": "fixtures_windows_detailing_01_32"
+          },
+          {
+            "name": "fixtures_windows_detailing_01_33"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "shutters",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "wood",
+      "label": "Wood planks",
+      "category": "barricade",
+      "kind": "wood",
+      "mechanism": "barricade",
+      "references": {
+        "closed": [
+          {
+            "name": "carpentry_01_8"
+          },
+          {
+            "name": "carpentry_01_10"
+          },
+          {
+            "name": "carpentry_01_12"
+          },
+          {
+            "name": "carpentry_01_14"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "barricade",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "metal-sheet",
+      "label": "Metal sheet",
+      "category": "barricade",
+      "kind": "metal-sheet",
+      "mechanism": "barricade",
+      "references": {
+        "closed": [
+          {
+            "name": "constructedobjects_01_24"
+          }
+        ],
+        "damaged": [
+          {
+            "name": "constructedobjects_01_26"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "barricade",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "metal-bars",
+      "label": "Metal bars",
+      "category": "barricade",
+      "kind": "metal-bars",
+      "mechanism": "barricade",
+      "references": {
+        "closed": [
+          {
+            "name": "constructedobjects_01_55"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "barricade",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "sheet-rope",
+      "label": "Sheet rope",
+      "category": "rope",
+      "kind": "sheet-rope",
+      "mechanism": "sheet-rope",
+      "references": {
+        "closed": [
+          {
+            "name": "crafted_01_3",
+            "ropeRole": "anchor"
+          },
+          {
+            "name": "crafted_01_2",
+            "ropeRole": "upper"
+          },
+          {
+            "name": "crafted_01_10",
+            "ropeRole": "lower"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "rope",
+      "states": [
+        "present"
+      ]
+    },
+    {
+      "id": "rope",
+      "label": "Rope",
+      "category": "rope",
+      "kind": "rope",
+      "mechanism": "sheet-rope",
+      "references": {
+        "closed": [
+          {
+            "name": "crafted_01_3",
+            "ropeRole": "anchor"
+          },
+          {
+            "name": "crafted_01_2",
+            "ropeRole": "upper"
+          },
+          {
+            "name": "crafted_01_10",
+            "ropeRole": "lower"
+          }
+        ]
+      },
+      "generator": "accepted-attachment",
+      "slot": "rope",
+      "states": [
+        "present"
+      ]
+    }
+  ],
+  "nativeRules": {
+    "doorSheet": "doorTrans and not GarageDoor and not SlidingGlassDoor",
+    "doorBarricade": "not DoubleDoor and not GarageDoor",
+    "sheetRope": "climbable opening above ground"
+  }
+}

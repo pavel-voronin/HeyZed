@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "id": "heyzed",
+  "manual": true,
+  "spawn": {"x": 8107, "y": 11574, "z": 0},
+  "sandbox": {"Zombies": 3, "DayLength": 1, "EnableVehicles": true, "VehicleEasyUse": true, "CarSpawnRate": 3},
+  "steps": [
+    {"command": "native.playerFlags", "invisible": true},
+    {"command": "native.time", "hour": 13, "freeze": false}
+  ]
+}

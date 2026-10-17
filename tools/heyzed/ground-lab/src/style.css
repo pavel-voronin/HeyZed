@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@layer base {
+  body { @apply m-0 bg-slate-950 text-slate-200 text-xs font-sans; }
+  button { @apply h-6 rounded border border-slate-600 bg-slate-800 px-2 text-xs hover:bg-slate-700 disabled:opacity-40 disabled:cursor-default; }
+  input, select { @apply h-6 min-w-0 rounded border border-slate-600 bg-slate-900 px-1 text-xs; }
+  textarea { @apply min-h-24 rounded border border-slate-600 bg-slate-900 p-2 resize-y; }
+  label { @apply flex items-center gap-1; }
+}
+@layer components {
+  .app { @apply grid h-screen grid-cols-[280px_minmax(0,1fr)_250px] grid-rows-[36px_minmax(0,1fr)] overflow-hidden; }
+  .top { @apply col-span-3 flex items-center gap-5 border-b border-slate-700 px-3; }
+  .muted { @apply text-slate-400; }
+  .error { @apply text-red-300; }
+  .catalog { @apply flex min-h-0 flex-col gap-2 border-r border-slate-700 p-2; }
+  .tile-list { @apply flex min-h-0 flex-1 flex-col gap-1 overflow-y-auto; }
+  .tile { @apply flex h-auto shrink-0 flex-col items-start gap-1 px-2 py-1 text-left break-all; }
+  .tile-active { @apply flex h-auto shrink-0 flex-col items-start gap-1 border-blue-400 bg-slate-700 px-2 py-1 text-left break-all; }
+  .workspace { @apply flex min-w-0 min-h-0 flex-col; }
+  .toolbar { @apply flex flex-wrap items-center gap-2 border-b border-slate-700 p-2; }
+  .views { @apply grid min-h-0 flex-1 grid-cols-2 gap-px bg-slate-700; }
+  .viewport { @apply flex min-h-0 min-w-0 flex-col bg-slate-900; }
+  .panel-title { @apply shrink-0 border-b border-slate-700 px-2 py-2 font-medium text-slate-300; }
+  .canvas { @apply block min-h-0 w-full flex-1 cursor-crosshair; }
+  .review { @apply flex min-h-0 flex-col gap-2 overflow-auto border-l border-slate-700 p-2; }
+  .review label { @apply justify-between; }
+  .name { @apply break-all; }
+  .markers { @apply flex flex-col gap-2; }
+  .marker { @apply flex items-start justify-between gap-1 rounded border border-slate-700 p-2; }
+  .legend { @apply flex flex-col gap-1 text-slate-400; }
+  .legend-item { @apply flex items-center gap-2; }
+  .loading { @apply p-6; }
+  .sidebar-tabs { @apply grid shrink-0 grid-cols-2 gap-1; }
+  .tab { @apply px-1; }
+  .tab-active { @apply border-blue-400 bg-slate-700 px-1; }
+  .inspector { @apply flex min-h-0 flex-col gap-2 overflow-auto; }
+  .source-card { @apply flex shrink-0 flex-col gap-2 rounded border border-slate-700 p-2; }
+  .source-summary { @apply flex items-start gap-2; }
+  .source-sprite { @apply h-40 w-20 shrink-0 object-contain; }
+  .source-values { @apply grid min-w-0 grid-cols-1 gap-1; }
+  .source-values dt { @apply text-slate-400; }
+  .source-values dd { @apply min-w-0 break-words; }
+  .property-list { @apply grid grid-cols-1 gap-1 py-2; }
+  .property-list dt { @apply break-all text-slate-400; }
+  .property-list dd { @apply break-all; }
+  .source-card summary { @apply cursor-pointer text-slate-300; }
+}

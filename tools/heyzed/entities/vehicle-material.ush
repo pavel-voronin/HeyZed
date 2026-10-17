@@ -1,0 +1,73 @@
+struct NativeVehicleColor
+{
+    float3 Raw(float3 c){return lerp(c*12.92,1.055*pow(max(c,0),1.0/2.4)-.055,step(.0031308,c));}
+    float3 Linear(float3 c){return lerp(c/12.92,pow(max((c+.055)/1.055,0),2.4),step(.04045,c));}
+    float3 HSV(float3 c){float hi=max(c.r,max(c.g,c.b)),lo=min(c.r,min(c.g,c.b)),d=hi-lo,h=0;if(d>.00001){if(hi==c.r)h=(c.g-c.b)/d;else if(hi==c.g)h=2+(c.b-c.r)/d;else h=4+(c.r-c.g)/d;}return float3(frac(h/6),hi>0?d/hi:0,hi);}
+    float3 RGB(float3 h){float3 p=abs(frac(h.xxx+float3(0,2.0/3,1.0/3))*6-3);return h.z*lerp(float3(1,1,1),saturate(p-1),h.y);}
+    float3 Paint(float3 c,float3 modifier){float3 h=HSV(c);return RGB(float3(modifier.x,clamp(h.y+modifier.y-.5,0,.9999),clamp(h.z+modifier.z-.5,0,.9999)));}
+    int Zone(float3 mask){
+        int3 q=int3(round(mask*4));if(distance(mask,float3(q)*.25)>.018)return -1;
+        switch(q.r*25+q.g*5+q.b){
+            case 100:return 0;
+            case 20:return 1;
+            case 24:return 2;
+            case 120:return 3;
+            case 104:return 4;
+            case 4:return 5;
+            case 12:return 6;
+            case 60:return 7;
+            case 52:return 8;
+            case 2:return 9;
+            case 50:return 10;
+            case 10:return 11;
+            case 18:return 12;
+            case 90:return 13;
+            case 78:return 14;
+            case 3:return 15;
+            case 0:return 16;
+            case 25:return 17;
+            case 75:return 18;
+            case 15:return 19;
+            case 5:return 20;
+            case 55:return 21;
+            case 65:return 22;
+            case 93:return 23;
+            case 31:return 24;
+            case 102:return 25;
+            case 22:return 26;
+            default:return -1;
+        }
+    }
+    float Flag(int zone,float4 a,float4 b,float4 c,float4 d,float4 e,float4 f,float4 g){
+        int row=zone/4,col=zone%4;float4 v=row==0?a:row==1?b:row==2?c:row==3?d:row==4?e:row==5?f:g;
+        return col==0?v.x:col==1?v.y:col==2?v.z:v.w;
+    }
+
+};
+NativeVehicleColor Color;
+float4 base=Texture2DSample(Paint,PaintSampler,UV);
+float3 c=Color.Raw(base.rgb);
+float2 damageUV=MultiUV>.5?UV2:UV;
+int zone=-1;
+if(HasMask>.5){uint width,height;Mask.GetDimensions(width,height);float3 mask=Mask.Load(int3(clamp(int2(UV*float2(width,height)),int2(0,0),int2(width-1,height-1)),0)).rgb;zone=Color.Zone(mask);}
+float glass=zone>=6 && zone<=11?1:0;
+if(RandomPaint>.5)c=lerp(c,Color.Paint(c,PaintHSV.rgb),1-base.a);
+float4 rust=Texture2DSample(Rust,RustSampler,damageUV);c=lerp(c,Color.Raw(rust.rgb),rust.a*RustAmount);
+float missing=0,cracks=0;Glow=float3(0,0,0);
+if(zone>=0){
+    bool unpainted=glass>.5 || zone==0 || zone==1 || (zone>=17 && zone<=22);
+    float4 d1=Texture2DSample(Damage1,Damage1Sampler,damageUV),d2=Texture2DSample(Damage2,Damage2Sampler,damageUV);
+    float3 c1=Color.Raw(d1.rgb),c2=Color.Raw(d2.rgb);
+    if(RandomPaint>.5&&!unpainted){c1=Color.Paint(c1,PaintHSV.rgb);c2=Color.Paint(c2,PaintHSV.rgb);}
+    c=lerp(c,c1,d1.a*Color.Flag(zone,Damage1Enabled0,Damage1Enabled1,Damage1Enabled2,Damage1Enabled3,Damage1Enabled4,Damage1Enabled5,Damage1Enabled6)*(unpainted?1:.75));c=lerp(c,c2,d2.a*Color.Flag(zone,Damage2Enabled0,Damage2Enabled1,Damage2Enabled2,Damage2Enabled3,Damage2Enabled4,Damage2Enabled5,Damage2Enabled6)*(unpainted?1:.75));
+    float4 blood=Texture2DSample(Blood,BloodSampler,damageUV);float bm=Texture2DSample(BloodMask,BloodMaskSampler,damageUV).a;
+    float amount=saturate(Color.Flag(zone,BloodAmount0,BloodAmount1,BloodAmount2,BloodAmount3,BloodAmount4,BloodAmount5,BloodAmount6)),coverage=(1-pow(1-blood.a,3))*(1-pow(1-bm,3));
+    coverage=amount>.0001?saturate((coverage-1+amount)/amount):0;
+    c=lerp(c,Color.Raw(blood.rgb)*coverage,coverage*blood.a*Color.Flag(zone,BloodEnabled0,BloodEnabled1,BloodEnabled2,BloodEnabled3,BloodEnabled4,BloodEnabled5,BloodEnabled6));
+    c=lerp(c,float3(.2,.2,.2),Color.Flag(zone,Removed0,Removed1,Removed2,Removed3,Removed4,Removed5,Removed6));
+    if(glass>.5){missing=Color.Flag(zone,Removed0,Removed1,Removed2,Removed3,Removed4,Removed5,Removed6);cracks=max(d1.a*Color.Flag(zone,Damage1Enabled0,Damage1Enabled1,Damage1Enabled2,Damage1Enabled3,Damage1Enabled4,Damage1Enabled5,Damage1Enabled6),d2.a*Color.Flag(zone,Damage2Enabled0,Damage2Enabled1,Damage2Enabled2,Damage2Enabled3,Damage2Enabled4,Damage2Enabled5,Damage2Enabled6));}
+    float4 lamp=Texture2DSample(Lamps,LampsSampler,UV);Glow=lamp.rgb*lamp.a*Color.Flag(zone,Lit0,Lit1,Lit2,Lit3,Lit4,Lit5,Lit6)*2;
+}
+float opacity=GlassPass>.5?glass*(.10+.22*pow(1-abs(dot(normalize(Normal),normalize(View))),5)+cracks*.24)*(1-missing):1-glass;
+if(GlassPass>.5)c=lerp(float3(.18,.24,.27),c,.32);
+return float4(Color.Linear(saturate(c))*Tint.rgb,opacity);

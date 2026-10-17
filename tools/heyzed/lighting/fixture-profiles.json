@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "profiles": {
+    "room": {"asset":"pull_chain_light_socket","meshOffsetCm":[0,0,0],"emitterCm":[0,0,-18],"direction":[0,0,-1],"lumens":1200,"outerAngle":0,"bulb":true},
+    "table": {"asset":"desk_lamp_arm_01","meshOffsetCm":[0,0,75],"emitterCm":[-0.5,-17.6,144.5],"direction":[0,-0.65,-0.76],"lumens":450,"outerAngle":75},
+    "held": {"asset":"vintage_flashlight","meshOffsetCm":[0,0,0],"meshRotationDegrees":[0,-90,0],"emitterCm":[17,0,10.6],"direction":[1,0,0],"lumens":700,"outerAngle":30},
+    "sign": {"meshOffsetCm":[-40,0,190],"emitterCm":[-32,0,190],"direction":[1,0,0],"lumens":300,"outerAngle":75,"sign":true},
+    "street": {"asset":"street_lamp_01","meshOffsetCm":[0,0,0],"emitterCm":[0,0,326.43],"direction":[0,0,-1],"lumens":1800,"outerAngle":0},
+    "wall": {"emitterCm":[-42,0,180],"direction":[1,0,0],"lumens":800,"outerAngle":0},
+    "switch": {"asset":"native_switch_plate","meshOffsetCm":[-42,0,135],"meshScale":[0.018,0.09,0.14],"emitterCm":[-42,0,135],"direction":[1,0,0],"lumens":0,"outerAngle":0}
+  }
+}

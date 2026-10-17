@@ -1,0 +1,31 @@
+{
+  "source": "https://polyhaven.com/a/street_lamp_01",
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "file": "street_lamp_01.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/street_lamp_01/street_lamp_01_1k.gltf",
+      "sha256": "5d0358ede168b5e04547780b99d8e6d651cbe644e468e67cb505019047cbd5c8"
+    },
+    {
+      "file": "textures/street_lamp_01_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/street_lamp_01/street_lamp_01_arm_1k.jpg",
+      "sha256": "4b5487a6c7ee300c3cf5449629e01c35409e5c7ac1695edb9fe69d4821853c7c"
+    },
+    {
+      "file": "textures/street_lamp_01_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/street_lamp_01/street_lamp_01_diff_1k.jpg",
+      "sha256": "3e9d3471b33eb1f8075ed741c2b1932103598626d057ca12ef38005ea5fcb165"
+    },
+    {
+      "file": "textures/street_lamp_01_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/street_lamp_01/street_lamp_01_nor_gl_1k.jpg",
+      "sha256": "172af0fd7ed4999e9f520b9f56e1f357a6dba87adbd7b8aa87e0a0b95840c63d"
+    },
+    {
+      "file": "street_lamp_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/street_lamp_01/street_lamp_01.bin",
+      "sha256": "c283db9b6d95835d9e8fc1692829acadcb21a0623b2daaa7231cec1440488401"
+    }
+  ]
+}

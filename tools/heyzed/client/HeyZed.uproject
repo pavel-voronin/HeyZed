@@ -1,0 +1,52 @@
+{
+  "FileVersion": 3,
+  "EngineAssociation": "5.8",
+  "Category": "Experiments",
+  "Description": "heyzed local character bridge",
+  "Plugins": [
+    { "Name": "IKRig", "Enabled": true },
+    { "Name": "CurveExpression", "Enabled": true, "TargetAllowList": ["Editor"] },
+    { "Name": "DrawDebugLibrary", "Enabled": true, "TargetAllowList": ["Editor"] },
+    { "Name": "PoseSearch", "Enabled": true },
+    { "Name": "BlendStack", "Enabled": true },
+    { "Name": "AnimationWarping", "Enabled": true },
+    { "Name": "AnimationLocomotionLibrary", "Enabled": true },
+    { "Name": "MotionWarping", "Enabled": true },
+    { "Name": "Chooser", "Enabled": true },
+    { "Name": "ControlRig", "Enabled": true },
+    {
+      "Name": "EnhancedInput",
+      "Enabled": true
+    },
+    {
+      "Name": "PythonScriptPlugin",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
+    {
+      "Name": "EditorScriptingUtilities",
+      "Enabled": true,
+      "TargetAllowList": [
+        "Editor"
+      ]
+    },
+    {
+      "Name": "ProceduralMeshComponent",
+      "Enabled": true
+    }
+  ],
+  "Modules": [
+    {
+      "Name": "HeyZedAuthoring",
+      "Type": "Editor",
+      "LoadingPhase": "Default"
+    },
+    {
+      "Name": "HeyZed",
+      "Type": "Runtime",
+      "LoadingPhase": "Default"
+    }
+  ]
+}

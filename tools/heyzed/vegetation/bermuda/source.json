@@ -1,0 +1,36 @@
+{
+  "asset": "Grass Bermuda 01",
+  "source": "https://polyhaven.com/a/grass_bermuda_01",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "authors": [
+    "Rico Cilliers",
+    "Rob Tuytel"
+  ],
+  "files": {
+    "grass_bermuda_01.gltf": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/2k/grass_bermuda_01/grass_bermuda_01_2k.gltf",
+      "sha256": "52e20d25fc126ebb59e724b49baff7a38737d33ce2a245a39796647e8d0b9f34"
+    },
+    "textures/grass_bermuda_01_nor_gl_2k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/grass_bermuda_01/grass_bermuda_01_nor_gl_2k.jpg",
+      "sha256": "d8a16471065a1206e455d0c4128694b56d265d7cb9908718fc83c581fddb1dc8"
+    },
+    "textures/grass_bermuda_01_diff_2k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/grass_bermuda_01/grass_bermuda_01_diff_2k.jpg",
+      "sha256": "30183c203739dee9812b70f21916fcdcd88719dcfe4fa3270d8ce208369ec933"
+    },
+    "textures/grass_bermuda_01_arm_2k.jpg": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/2k/grass_bermuda_01/grass_bermuda_01_arm_2k.jpg",
+      "sha256": "ab8f1a577b768906222f52c7e51855408c795e497344b15e337bf87ec0aabd1f"
+    },
+    "grass_bermuda_01.bin": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/grass_bermuda_01/grass_bermuda_01.bin",
+      "sha256": "b98be48b43afb9d57f6c722d918a49996635064b829b16dc14ef4a48c0f04dae"
+    },
+    "textures/grass_bermuda_01_alpha_2k.png": {
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/png/2k/grass_bermuda_01/grass_bermuda_01_alpha_2k.png",
+      "sha256": "2750b808598d2c4116e494c20065a2dbf7fba5a098c3ed445772ff6d02ec3d3c"
+    }
+  }
+}

@@ -1,0 +1,58 @@
+struct RegionSurface
+{
+    float hash(float2 p) { return frac(sin(dot(p,float2(127.1,311.7)))*43758.5453); }
+    float noise(float2 p)
+    {
+        float2 i=floor(p),f=frac(p);f=f*f*(3-2*f);
+        return lerp(lerp(hash(i),hash(i+float2(1,0)),f.x),lerp(hash(i+float2(0,1)),hash(i+1),f.x),f.y);
+    }
+    float4 sampleMap(Texture2D tex,SamplerState smp,float2 p,float width,float variation)
+    {
+        float2 uv=p/max(width,1);
+        return lerp(Texture2DSample(tex,smp,uv),Texture2DSample(tex,smp,uv*1.37+float2(7.31,3.17)),variation);
+    }
+    float3 style(Texture2D diffuse,SamplerState diffuseSampler,Texture2D normal,SamplerState normalSampler,
+        Texture2D rough,SamplerState roughSampler,float2 p,float width,float3 tint,float road,float aggregate,
+        float paint,float wear,float variation,float macro,out float3 n,out float r)
+    {
+        float3 grain=sampleMap(diffuse,diffuseSampler,p,width,variation).rgb;
+        float luminance=dot(grain,float3(.2126,.7152,.0722));
+        float3 color=lerp(grain,luminance.xxx,saturate(aggregate))*tint.rgb*macro;
+        float2 xy=sampleMap(normal,normalSampler,p,width,variation).xy*2-1;
+        n=normalize(float3(xy,sqrt(saturate(1-dot(xy,xy)))));
+        n=normalize(float3(n.xy*lerp(.7,.2,saturate(paint)),n.z));
+        float footprint=max(length(ddx(p/max(width,1))),length(ddy(p/max(width,1))));
+        n=normalize(float3(n.xy*(1-smoothstep(.015,.12,footprint)),n.z));
+        r=max(sampleMap(rough,roughSampler,p,width,variation).r,lerp(.85,.94,saturate(road)));
+        r=lerp(r,lerp(.94,.72,wear),saturate(paint));
+        return lerp(color,lerp(grain*.55,tint.rgb*lerp(.9,1.05,saturate(luminance)),wear),saturate(paint));
+    }
+};
+RegionSurface F;
+float2 p=World.xy+Origin.xy;
+float variation=F.noise(p*.0009),macro=lerp(.82,1.12,F.noise(p*.00025));
+float wear=smoothstep(.23,.47,F.noise(p*.18)*.68+F.noise(p*.037)*.32);
+float3 n;float r;
+float3 color=F.style(Diffuse0,Diffuse0Sampler,Normal0,Normal0Sampler,Rough0,Rough0Sampler,p,Width0,Tint0,Road0,Aggregate0,Paint0,wear,variation,macro,n,r);
+[branch] if(LayerCount>1.5)
+{
+    float3 n1;float r1;
+    float3 c1=F.style(Diffuse1,Diffuse1Sampler,Normal1,Normal1Sampler,Rough1,Rough1Sampler,p,Width1,Tint1,Road1,Aggregate1,Paint1,wear,variation,macro,n1,r1);
+    float a=saturate(Gates.r)*lerp(1,wear,saturate(Paint1));color=lerp(color,c1,a);n=normalize(lerp(n,n1,a));r=lerp(r,r1,a);
+}
+[branch] if(LayerCount>2.5)
+{
+    float3 n2;float r2;
+    float3 c2=F.style(Diffuse2,Diffuse2Sampler,Normal2,Normal2Sampler,Rough2,Rough2Sampler,p,Width2,Tint2,Road2,Aggregate2,Paint2,wear,variation,macro,n2,r2);
+    float a=saturate(Gates.g)*lerp(1,wear,saturate(Paint2));color=lerp(color,c2,a);n=normalize(lerp(n,n2,a));r=lerp(r,r2,a);
+}
+[branch] if(LayerCount>3.5)
+{
+    float3 n3;float r3;
+    float3 c3=F.style(Diffuse3,Diffuse3Sampler,Normal3,Normal3Sampler,Rough3,Rough3Sampler,p,Width3,Tint3,Road3,Aggregate3,Paint3,wear,variation,macro,n3,r3);
+    float a=saturate(Gates.b)*lerp(1,wear,saturate(Paint3));color=lerp(color,c3,a);n=normalize(lerp(n,n3,a));r=lerp(r,r3,a);
+}
+Normal=n;Roughness=r;
+float2 maskUV=(floor(p*.01)-Region.xy+.5)/256;
+Visibility=MaskEnabled>.5?Texture2DSampleLevel(MaskTexture,MaskTextureSampler,maskUV,0).r:1;
+return color;

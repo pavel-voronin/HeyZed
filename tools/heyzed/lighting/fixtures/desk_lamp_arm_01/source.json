@@ -1,0 +1,31 @@
+{
+  "source": "https://polyhaven.com/a/desk_lamp_arm_01",
+  "license": "CC0-1.0",
+  "files": [
+    {
+      "file": "desk_lamp_arm_01.gltf",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/1k/desk_lamp_arm_01/desk_lamp_arm_01_1k.gltf",
+      "sha256": "2ac8389afc1519449a9cfdf7efd9fa36780a2177bb47ab58f7a7dda7d247dc8c"
+    },
+    {
+      "file": "textures/desk_lamp_arm_01_nor_gl_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/desk_lamp_arm_01/desk_lamp_arm_01_nor_gl_1k.jpg",
+      "sha256": "feefedc3835ecef3634e97a24977451671f8f57747a023f48cd14c84bc73513a"
+    },
+    {
+      "file": "textures/desk_lamp_arm_01_arm_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/desk_lamp_arm_01/desk_lamp_arm_01_arm_1k.jpg",
+      "sha256": "206404c79fb7dcf8e2c4558c13544342f87d2190526231a1750c3c9adc256fbc"
+    },
+    {
+      "file": "textures/desk_lamp_arm_01_diff_1k.jpg",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/jpg/1k/desk_lamp_arm_01/desk_lamp_arm_01_diff_1k.jpg",
+      "sha256": "159eb178aba3271bd555cbe07ca36431d8af9a006f0b8e9d8c67030cbdc9e4d3"
+    },
+    {
+      "file": "desk_lamp_arm_01.bin",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Models/gltf/8k/desk_lamp_arm_01/desk_lamp_arm_01.bin",
+      "sha256": "07f34e32abecbaa63d28b9d12d6a0eb82b775a0f50c92327655909d72ff8489b"
+    }
+  ]
+}

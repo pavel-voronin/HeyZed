@@ -1,0 +1,54 @@
+{
+  "schema": "heyzed:window-sections/1",
+  "profiles": {
+    "window-4-0": {
+      "columns": 2,
+      "rowCuts": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "fixedRows": [
+        2
+      ]
+    },
+    "window-11-0": {
+      "columns": 2,
+      "rowCuts": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "fixedRows": [
+        0
+      ]
+    },
+    "window-12-0": {
+      "columns": 2,
+      "rowCuts": [
+        0.3333333333333333,
+        0.6666666666666666
+      ],
+      "fixedRows": [
+        0
+      ]
+    },
+    "window-19-0": {
+      "columns": 3,
+      "rowCuts": [
+        0.25,
+        0.5,
+        0.75
+      ],
+      "archBoundary": true,
+      "fixedRows": [
+        3,
+        4
+      ]
+    },
+    "window-10-0": {
+      "fixedPartPrefixes": [
+        "arch.",
+        "upper.top"
+      ]
+    }
+  }
+}

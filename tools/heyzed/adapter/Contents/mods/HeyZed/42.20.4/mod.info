@@ -1,0 +1,9 @@
+name=HeyZed
+id=HeyZed
+description=Local character input and state bridge for an Unreal Editor experiment.
+modversion=1
+javaJarFile=media/java/client/heyzed-adapter.jar
+javaPkgName=com.pavelvoronin.heyzed
+ZBVersionMin=2.3.4
+versionMin=42.21.0
+require=\ZombieBuddy

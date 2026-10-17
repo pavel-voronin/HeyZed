@@ -1,0 +1,1804 @@
+{
+  "schema": "heyzed:aperture-profiles/2",
+  "coordinates": "u / tileSize, z / floorHeight",
+  "profiles": [
+    {
+      "id": "window-1-0",
+      "label": "Window 1",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "1",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "1"
+      },
+      "shape": "quarter-ellipse",
+      "parameters": {
+        "left": 0.0,
+        "right": 0.734375,
+        "bottom": 0.35416666666666663,
+        "top": 0.9739583333333334,
+        "spring": 0.734375,
+        "crest": "left"
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 2
+        }
+      }
+    },
+    {
+      "id": "window-2-0",
+      "label": "Window 2",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "2",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "2"
+      },
+      "shape": "quarter-ellipse",
+      "parameters": {
+        "left": 0.25,
+        "right": 1.0,
+        "bottom": 0.35416666666666663,
+        "top": 0.9739583333333334,
+        "spring": 0.75,
+        "crest": "right"
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 2
+        }
+      }
+    },
+    {
+      "id": "window-3-0",
+      "label": "Window 3",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "3",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "3"
+      },
+      "shape": "quarter-ellipse",
+      "parameters": {
+        "left": 0.0,
+        "right": 0.734375,
+        "bottom": 0.0,
+        "top": 0.96875,
+        "spring": 0.7291666666666667,
+        "crest": "left"
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 2
+        }
+      },
+      "bottomPlacement": "floor"
+    },
+    {
+      "id": "window-4-0",
+      "label": "Window 4",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "4",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "4"
+      },
+      "shape": "quarter-ellipse",
+      "parameters": {
+        "left": 0.25,
+        "right": 1.0,
+        "bottom": 0.0,
+        "top": 0.96875,
+        "spring": 0.75,
+        "crest": "right"
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 2
+        }
+      },
+      "bottomPlacement": "floor"
+    },
+    {
+      "id": "window-5-0",
+      "label": "Window 5",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "5",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "5"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.0,
+        "right": 1.0,
+        "bottom": 0.34375,
+        "top": 0.9479166666666666
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-6-0",
+      "label": "Window 6",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "6",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "6"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.0,
+        "right": 0.75,
+        "bottom": 0.34375,
+        "top": 0.9479166666666666
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-7-0",
+      "label": "Window 7",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "7",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "7"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.25,
+        "right": 1.0,
+        "bottom": 0.34375,
+        "top": 0.9479166666666666
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-8-0",
+      "label": "Window 8",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "8",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "8"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.0,
+        "right": 1.0,
+        "bottom": 0.0,
+        "top": 0.96875
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      },
+      "bottomPlacement": "floor"
+    },
+    {
+      "id": "window-9-0",
+      "label": "Window 9 / A",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "9",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "9"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.140625,
+        "right": 0.859375,
+        "bottom": 0.375,
+        "top": 0.9479166666666666
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-9-1",
+      "label": "Window 9 / B",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": null,
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.21875,
+        "right": 0.78125,
+        "bottom": 0.38541666666666663,
+        "top": 0.75
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1,
+          "tileGroups": [
+            {
+              "tileset": "constructedobjects_01",
+              "indices": [
+                56
+              ]
+            },
+            {
+              "tileset": "industry_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "industry_railroad_05",
+              "indices": [
+                16,
+                32
+              ]
+            },
+            {
+              "tileset": "industry_trucks_01",
+              "indices": [
+                8,
+                12,
+                56
+              ]
+            },
+            {
+              "tileset": "location_barn_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_business_bank_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_community_school_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_hospitality_sunstarmotel_01",
+              "indices": [
+                8,
+                12,
+                32
+              ]
+            },
+            {
+              "tileset": "location_hospitality_sunstarmotel_02",
+              "indices": [
+                25
+              ]
+            },
+            {
+              "tileset": "location_restaurant_bar_01",
+              "indices": [
+                52
+              ]
+            },
+            {
+              "tileset": "location_restaurant_bar_smutz",
+              "indices": [
+                24
+              ]
+            },
+            {
+              "tileset": "location_restaurant_diner_01",
+              "indices": [
+                22
+              ]
+            },
+            {
+              "tileset": "location_restaurant_pie_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_restaurant_pileocrepe_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_restaurant_pizzawhirled_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_restaurant_seahorse_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_restaurant_spiffos_01",
+              "indices": [
+                44,
+                70
+              ]
+            },
+            {
+              "tileset": "location_sewer_01",
+              "indices": [
+                16
+              ]
+            },
+            {
+              "tileset": "location_shop_bargNclothes_01",
+              "indices": [
+                32
+              ]
+            },
+            {
+              "tileset": "location_shop_mall_01",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "location_trailer_01",
+              "indices": [
+                8,
+                32
+              ]
+            },
+            {
+              "tileset": "walls_commercial_01",
+              "indices": [
+                56
+              ]
+            },
+            {
+              "tileset": "walls_commercial_03",
+              "indices": [
+                8,
+                24,
+                40,
+                56
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_01",
+              "indices": [
+                8,
+                12,
+                24,
+                40,
+                56,
+                60
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_02",
+              "indices": [
+                8,
+                12,
+                24,
+                28,
+                40,
+                44,
+                56,
+                60,
+                72,
+                76,
+                88,
+                92,
+                104
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_01",
+              "indices": [
+                8,
+                32
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_02",
+              "indices": [
+                8
+              ]
+            },
+            {
+              "tileset": "walls_garage_01",
+              "indices": [
+                40,
+                44
+              ]
+            },
+            {
+              "tileset": "walls_garage_02",
+              "indices": [
+                24
+              ]
+            },
+            {
+              "tileset": "walls_interior_bathroom_01",
+              "indices": [
+                8,
+                12,
+                24,
+                28,
+                40,
+                44,
+                56,
+                60,
+                72,
+                76,
+                88,
+                92,
+                104
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_01",
+              "indices": [
+                8,
+                12,
+                24,
+                28,
+                40,
+                44,
+                56,
+                60,
+                72,
+                76,
+                88,
+                92,
+                104,
+                108,
+                120
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_02",
+              "indices": [
+                8,
+                12,
+                24,
+                28,
+                40,
+                44,
+                56,
+                60,
+                72,
+                76,
+                88,
+                92,
+                104,
+                108,
+                120,
+                124
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_03",
+              "indices": [
+                8,
+                12,
+                24,
+                28,
+                40,
+                44,
+                56,
+                60
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_04",
+              "indices": [
+                8,
+                12,
+                24,
+                28,
+                40,
+                44,
+                56,
+                60,
+                72,
+                76,
+                88,
+                92
+              ]
+            }
+          ]
+        },
+        "N": {
+          "quarterTurns": 0,
+          "tileGroups": [
+            {
+              "tileset": "constructedobjects_01",
+              "indices": [
+                57
+              ]
+            },
+            {
+              "tileset": "industry_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "industry_railroad_05",
+              "indices": [
+                17,
+                33
+              ]
+            },
+            {
+              "tileset": "industry_trucks_01",
+              "indices": [
+                9,
+                13,
+                57
+              ]
+            },
+            {
+              "tileset": "location_barn_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_business_bank_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_community_school_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_hospitality_sunstarmotel_01",
+              "indices": [
+                9,
+                13,
+                33
+              ]
+            },
+            {
+              "tileset": "location_hospitality_sunstarmotel_02",
+              "indices": [
+                17
+              ]
+            },
+            {
+              "tileset": "location_restaurant_bar_01",
+              "indices": [
+                53
+              ]
+            },
+            {
+              "tileset": "location_restaurant_bar_smutz",
+              "indices": [
+                25
+              ]
+            },
+            {
+              "tileset": "location_restaurant_diner_01",
+              "indices": [
+                23
+              ]
+            },
+            {
+              "tileset": "location_restaurant_pie_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_restaurant_pileocrepe_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_restaurant_pizzawhirled_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_restaurant_seahorse_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_restaurant_spiffos_01",
+              "indices": [
+                45,
+                71,
+                79
+              ]
+            },
+            {
+              "tileset": "location_sewer_01",
+              "indices": [
+                17
+              ]
+            },
+            {
+              "tileset": "location_shop_bargNclothes_01",
+              "indices": [
+                33
+              ]
+            },
+            {
+              "tileset": "location_shop_mall_01",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "location_trailer_01",
+              "indices": [
+                9,
+                33
+              ]
+            },
+            {
+              "tileset": "walls_commercial_01",
+              "indices": [
+                57
+              ]
+            },
+            {
+              "tileset": "walls_commercial_03",
+              "indices": [
+                9,
+                25,
+                41,
+                57
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_01",
+              "indices": [
+                9,
+                13,
+                25,
+                29,
+                41,
+                57,
+                61
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_02",
+              "indices": [
+                9,
+                13,
+                25,
+                29,
+                41,
+                45,
+                57,
+                61,
+                73,
+                77,
+                89,
+                93,
+                105
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_01",
+              "indices": [
+                9,
+                33,
+                37
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_02",
+              "indices": [
+                9
+              ]
+            },
+            {
+              "tileset": "walls_garage_01",
+              "indices": [
+                41,
+                45
+              ]
+            },
+            {
+              "tileset": "walls_garage_02",
+              "indices": [
+                25
+              ]
+            },
+            {
+              "tileset": "walls_interior_bathroom_01",
+              "indices": [
+                9,
+                13,
+                25,
+                29,
+                41,
+                45,
+                57,
+                61,
+                73,
+                77,
+                89,
+                93,
+                105
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_01",
+              "indices": [
+                9,
+                13,
+                25,
+                29,
+                41,
+                45,
+                57,
+                61,
+                73,
+                77,
+                89,
+                93,
+                105,
+                109,
+                121
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_02",
+              "indices": [
+                9,
+                13,
+                25,
+                29,
+                41,
+                45,
+                57,
+                61,
+                73,
+                77,
+                89,
+                93,
+                105,
+                109,
+                121,
+                125
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_03",
+              "indices": [
+                9,
+                13,
+                25,
+                29,
+                41,
+                45,
+                57,
+                61
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_04",
+              "indices": [
+                9,
+                13,
+                25,
+                29,
+                41,
+                45,
+                57,
+                61,
+                73,
+                77,
+                89,
+                93
+              ]
+            },
+            {
+              "tileset": "walls_logs",
+              "indices": [
+                105
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "window-10-0",
+      "label": "Window 10",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "10",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "10"
+      },
+      "shape": "elliptic-arch",
+      "parameters": {
+        "left": 0.140625,
+        "right": 0.875,
+        "bottom": 0.36458333333333337,
+        "top": 0.8489583333333334,
+        "spring": 0.7265625
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-11-0",
+      "label": "Window 11",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "11",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "11"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.0,
+        "right": 0.703125,
+        "bottom": 0.0,
+        "top": 0.9583333333333334
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      },
+      "bottomPlacement": "floor"
+    },
+    {
+      "id": "window-12-0",
+      "label": "Window 12",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "12",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "12"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.21875,
+        "right": 1.0,
+        "bottom": 0.0,
+        "top": 0.9583333333333334
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      },
+      "bottomPlacement": "floor"
+    },
+    {
+      "id": "window-13-0",
+      "label": "Window 13",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "13",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "13"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.0,
+        "right": 0.765625,
+        "bottom": 0.359375,
+        "top": 0.71875
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-14-0",
+      "label": "Window 14",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "14",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "14"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.0,
+        "right": 1.0,
+        "bottom": 0.359375,
+        "top": 0.71875
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-15-0",
+      "label": "Window 15",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "15",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "15"
+      },
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.234375,
+        "right": 1.0,
+        "bottom": 0.359375,
+        "top": 0.7135416666666667
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-16-0",
+      "label": "Window 16",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": "16",
+      "selector": {
+        "kind": "native-window-shape",
+        "value": "16"
+      },
+      "shape": "ellipse",
+      "parameters": {
+        "left": 0.171875,
+        "right": 0.859375,
+        "bottom": 0.671875,
+        "top": 0.9635416666666666
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1
+        },
+        "N": {
+          "quarterTurns": 0
+        }
+      }
+    },
+    {
+      "id": "window-17-0",
+      "label": "Window 17",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": null,
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.0,
+        "right": 0.78125,
+        "bottom": 0.39583333333333337,
+        "top": 0.7552083333333333
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1,
+          "tileGroups": [
+            {
+              "tileset": "location_hospitality_sunstarmotel_01",
+              "indices": [
+                20
+              ]
+            },
+            {
+              "tileset": "location_trailer_01",
+              "indices": [
+                12,
+                36
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_04",
+              "indices": [
+                0,
+                4,
+                8,
+                12,
+                16,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40,
+                44,
+                48,
+                52,
+                56,
+                60,
+                64,
+                68,
+                72
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_02",
+              "indices": [
+                4,
+                12,
+                16
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_06",
+              "indices": [
+                0,
+                4,
+                8,
+                12,
+                16,
+                20,
+                24,
+                28,
+                32,
+                36,
+                40,
+                44,
+                48,
+                52,
+                56,
+                60,
+                64,
+                68,
+                72,
+                76,
+                80,
+                84,
+                88,
+                92,
+                96,
+                100,
+                104,
+                108,
+                112,
+                116,
+                120,
+                124,
+                128,
+                132,
+                136,
+                140
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_27",
+              "indices": [
+                0,
+                4,
+                8,
+                12,
+                16,
+                20,
+                24,
+                32,
+                36,
+                40,
+                44,
+                48,
+                52,
+                56,
+                60,
+                64,
+                68,
+                72,
+                76,
+                80,
+                84,
+                88,
+                92,
+                96,
+                100,
+                104
+              ]
+            }
+          ]
+        },
+        "N": {
+          "quarterTurns": 0,
+          "tileGroups": [
+            {
+              "tileset": "location_hospitality_sunstarmotel_01",
+              "indices": [
+                18,
+                22
+              ]
+            },
+            {
+              "tileset": "location_trailer_01",
+              "indices": [
+                14,
+                38
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_04",
+              "indices": [
+                6,
+                10,
+                14,
+                18,
+                22,
+                26,
+                30,
+                34,
+                38,
+                42,
+                46,
+                50,
+                54,
+                58,
+                62,
+                66,
+                70,
+                74
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_02",
+              "indices": [
+                6,
+                14,
+                18
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_06",
+              "indices": [
+                2,
+                6,
+                10,
+                14,
+                18,
+                22,
+                26,
+                30,
+                34,
+                38,
+                42,
+                46,
+                50,
+                54,
+                58,
+                62,
+                66,
+                70,
+                74,
+                78,
+                82,
+                86,
+                90,
+                94,
+                98,
+                102,
+                106,
+                110,
+                114,
+                118,
+                122,
+                126,
+                130,
+                134,
+                138,
+                142
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_27",
+              "indices": [
+                2,
+                6,
+                10,
+                14,
+                18,
+                22,
+                26,
+                34,
+                38,
+                42,
+                46,
+                50,
+                54,
+                58,
+                62,
+                66,
+                70,
+                74,
+                78,
+                82,
+                86,
+                90,
+                94,
+                98,
+                102,
+                106
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "window-18-0",
+      "label": "Window 18",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": null,
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.234375,
+        "right": 1.0,
+        "bottom": 0.39583333333333337,
+        "top": 0.7552083333333333
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1,
+          "tileGroups": [
+            {
+              "tileset": "location_hospitality_sunstarmotel_01",
+              "indices": [
+                21
+              ]
+            },
+            {
+              "tileset": "location_trailer_01",
+              "indices": [
+                13,
+                37
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_04",
+              "indices": [
+                1,
+                5,
+                9,
+                13,
+                17,
+                21,
+                25,
+                29,
+                33,
+                37,
+                41,
+                45,
+                49,
+                53,
+                57,
+                61,
+                65,
+                69,
+                73
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_02",
+              "indices": [
+                5,
+                13,
+                17
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_06",
+              "indices": [
+                1,
+                5,
+                9,
+                13,
+                17,
+                21,
+                25,
+                29,
+                33,
+                37,
+                41,
+                45,
+                49,
+                53,
+                57,
+                61,
+                65,
+                69,
+                73,
+                77,
+                81,
+                85,
+                89,
+                93,
+                97,
+                101,
+                105,
+                109,
+                113,
+                117,
+                121,
+                125,
+                129,
+                133,
+                137,
+                141
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_27",
+              "indices": [
+                1,
+                5,
+                9,
+                13,
+                17,
+                21,
+                25,
+                33,
+                37,
+                41,
+                45,
+                49,
+                53,
+                57,
+                61,
+                65,
+                69,
+                73,
+                77,
+                81,
+                85,
+                89,
+                93,
+                97,
+                101,
+                105
+              ]
+            }
+          ]
+        },
+        "N": {
+          "quarterTurns": 0,
+          "tileGroups": [
+            {
+              "tileset": "location_hospitality_sunstarmotel_01",
+              "indices": [
+                19,
+                23
+              ]
+            },
+            {
+              "tileset": "location_trailer_01",
+              "indices": [
+                15,
+                39
+              ]
+            },
+            {
+              "tileset": "walls_exterior_house_04",
+              "indices": [
+                3,
+                7,
+                11,
+                15,
+                19,
+                23,
+                27,
+                31,
+                35,
+                39,
+                43,
+                47,
+                51,
+                55,
+                59,
+                63,
+                67,
+                71,
+                75
+              ]
+            },
+            {
+              "tileset": "walls_exterior_wooden_02",
+              "indices": [
+                7,
+                15,
+                19
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_06",
+              "indices": [
+                3,
+                7,
+                11,
+                15,
+                19,
+                23,
+                27,
+                31,
+                35,
+                39,
+                43,
+                47,
+                51,
+                55,
+                59,
+                63,
+                67,
+                71,
+                75,
+                79,
+                83,
+                87,
+                91,
+                95,
+                99,
+                103,
+                107,
+                111,
+                115,
+                119,
+                123,
+                127,
+                131,
+                135,
+                139,
+                143
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_27",
+              "indices": [
+                3,
+                7,
+                11,
+                15,
+                19,
+                23,
+                27,
+                35,
+                39,
+                43,
+                47,
+                51,
+                55,
+                59,
+                63,
+                67,
+                71,
+                75,
+                79,
+                83,
+                87,
+                91,
+                95,
+                99,
+                103,
+                107
+              ]
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "window-19-0",
+      "label": "Window 19",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": null,
+      "shape": "elliptic-arch",
+      "parameters": {
+        "left": 0.125,
+        "right": 0.875,
+        "bottom": 0.0,
+        "top": 0.9635416666666666,
+        "spring": 0.8104485782152052
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1,
+          "tileGroups": [
+            {
+              "tileset": "walls_exterior_house_03",
+              "indices": [
+                0,
+                2,
+                4,
+                6,
+                8,
+                10,
+                12,
+                14,
+                16,
+                18,
+                20,
+                22,
+                24,
+                26,
+                28,
+                30,
+                32,
+                34,
+                36
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_05",
+              "indices": [
+                10,
+                18,
+                20,
+                22,
+                34,
+                44,
+                56,
+                80
+              ]
+            }
+          ]
+        },
+        "N": {
+          "quarterTurns": 0,
+          "tileGroups": [
+            {
+              "tileset": "walls_exterior_house_03",
+              "indices": [
+                1,
+                3,
+                5,
+                7,
+                9,
+                11,
+                13,
+                15,
+                17,
+                19,
+                21,
+                23,
+                25,
+                27,
+                29,
+                31,
+                33,
+                35,
+                37
+              ]
+            },
+            {
+              "tileset": "walls_interior_house_05",
+              "indices": [
+                11,
+                19,
+                21,
+                23,
+                39,
+                43,
+                45,
+                57,
+                59,
+                73,
+                81
+              ]
+            }
+          ]
+        }
+      },
+      "bottomPlacement": "floor"
+    },
+    {
+      "id": "window-20-0",
+      "label": "Church arch / upper",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": null,
+      "shape": "pointed-arch",
+      "parameters": {
+        "left": 0.03125,
+        "right": 0.9375,
+        "bottom": 0.0,
+        "top": 0.859375,
+        "spring": 0.6171875
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1,
+          "tileGroups": [
+            {
+              "tileset": "location_community_church_small_01",
+              "indices": [
+                128,
+                130,
+                132,
+                134,
+                144,
+                146,
+                148,
+                160,
+                162,
+                164,
+                166
+              ]
+            }
+          ]
+        },
+        "N": {
+          "quarterTurns": 0,
+          "tileGroups": [
+            {
+              "tileset": "location_community_church_small_01",
+              "indices": [
+                129,
+                131,
+                133,
+                135,
+                145,
+                147,
+                149,
+                161,
+                163,
+                165,
+                167
+              ]
+            }
+          ]
+        }
+      },
+      "bottomPlacement": "floor"
+    },
+    {
+      "id": "window-21-0",
+      "label": "Church arch / lower",
+      "scope": "single-tile section",
+      "status": "approved",
+      "nativeShape": null,
+      "shape": "rectangle",
+      "parameters": {
+        "left": 0.03125,
+        "right": 0.9375,
+        "bottom": 0.5416666666666667,
+        "top": 1.0
+      },
+      "bindings": {
+        "W": {
+          "quarterTurns": 1,
+          "tileGroups": [
+            {
+              "tileset": "location_community_church_small_01",
+              "indices": [
+                136,
+                138,
+                140,
+                142,
+                152,
+                154,
+                156,
+                168,
+                170,
+                172,
+                174
+              ]
+            }
+          ]
+        },
+        "N": {
+          "quarterTurns": 0,
+          "tileGroups": [
+            {
+              "tileset": "location_community_church_small_01",
+              "indices": [
+                137,
+                139,
+                141,
+                143,
+                153,
+                155,
+                157,
+                169,
+                171,
+                173,
+                175
+              ]
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "reviewedBindings": {
+    "count": 4314,
+    "sha256": "3451289ae42ced1403cba3b506bfa0bfb8de8528e38f2a95c4d7c7b31edf3147"
+  },
+  "verticalPlacement": "below-ceiling-slab"
+}
